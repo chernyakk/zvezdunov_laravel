@@ -25,7 +25,7 @@
 	top: 0; left: 0;
 	width: 100%;
 	height: 64px;
-	background: #f5f6fb; 
+	background: #f5f6fb;
 	z-index: 99999;
 }
 
@@ -111,6 +111,7 @@
 	position: relative;
 	text-align: center;
 	margin: 0;
+    /*margin-bottom: 200px;*/
 	font-family: 'Merel',sans-serif;
 	font-weight: 500;
 	font-size: 93px;
@@ -132,7 +133,7 @@
 
 .block-video{
 	position: relative;
-	margin-top: -291px;
+	margin-top: -270px;
   margin-left: 305px;
 	border-radius: 25px;
 	width: 600px;
@@ -481,7 +482,7 @@
 	font-family: 'Merel',sans-serif;
 	font-weight: 400;
 	text-align: left;
-	font-size: 24px;
+	font-size: 21px;
 	padding-top: 15px;
 	width: 806px;
 	height: 124px;
@@ -648,6 +649,10 @@
 	color: #72699D;
 }
 
+.slider__img{
+    width: 100%;
+    border-radius: 25px;
+}
 
 
 /* Модальное окно ( заказать) */

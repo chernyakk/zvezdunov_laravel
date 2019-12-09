@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
+
 	<title>Научное шоу Профессора Звездунова в Красноярске</title>
 
         <!-- Fonts -->
@@ -61,9 +61,11 @@
 			<h1 class="video-description__title">Наука — это здорово!</h1>
 			<div class="video-description__frame"></div>
 			<div class="block-video">
-				<a href="#" class="block-video__link">
-					<img src="images/Video__img.png" alt="video" class="block-video__img">
-				</a>
+{{--				<iframe style="!important; border-radius: 25px" width="600" height="400"--}}
+{{--                src="https://www.youtube.com/embed/fFis3ef4gsA" frameborder="0" allow="accelerometer;--}}
+{{--                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
+                <iframe style="!important; border-radius: 25px" width="600" height="400" src="//vk.com/video_ext.php?oid=-79789144&id=456239022&hash=6a6ab8fee3e67ef8&hd=2"
+                       frameborder="0" allowfullscreen></iframe>
 			</div>
 			<div id="show"></div>
 		</div>
@@ -76,46 +78,46 @@
 					<div class="block">
 						<div class="box-show" data-id="1">
 							<img src="images/show__img-01.png" alt="holloware" class="box-show__img">
-							<span class="box-show__description">Обычное шоу</span>	
+							<span class="box-show__description">Обычное шоу</span>
 						</div>
 						<div class="box-show" data-id="2">
 							<img src="images/show__img-02.png" alt="holloware" class="box-show__img">
-							<span class="box-show__description">Welcome</span>	
-						</div>	
+							<span class="box-show__description">Welcome</span>
+						</div>
 						<div class="box-show" data-id="3">
 							<img src="images/show__img-03.png" alt="holloware" class="box-show__img">
-							<span class="box-show__description">Квест</span>	
-						</div>	
+							<span class="box-show__description">Квест</span>
+						</div>
 						<div class="box-show" data-id="4">
 							<img src="images/show__img-04.png" alt="holloware" class="box-show__img">
-							<span class="box-show__description">Азотное шоу</span>	
+							<span class="box-show__description">Азотное шоу</span>
 						</div>
-						
+
 						<div class="box-show" data-id="5">
 								<img src="images/show__img-05.png" alt="holloware" class="box-show__img">
-								<span class="box-show__description">Шоу с мастер классами</span>	
+								<span class="box-show__description">Шоу с мастер классами</span>
 							</div>
 							<div class="box-show" data-id="6">
 								<img src="images/show__img-06.png" alt="holloware" class="box-show__img">
-								<span class="box-show__description">Череда мастер классов</span>	
-							</div>	
+								<span class="box-show__description">Череда мастер классов</span>
+							</div>
 							<div class="box-show" data-id="7">
 								<img src="images/show__img-07.png" alt="holloware" class="box-show__img">
-								<span class="box-show__description">Тематическое шоу</span>	
-							</div>	
+								<span class="box-show__description">Тематическое шоу</span>
+							</div>
 							<div class="box-show" data-id="8">
 								<img src="images/show__img-09.png" alt="holloware" class="box-show__img">
-								<span class="box-show__description">Шоу под ключ</span>	
+								<span class="box-show__description">Шоу под ключ</span>
 							</div>
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- СОДЕРЖИМОЕ МОДАЛЬНОГО ОКНА -->
 
 			<div class="modal__content" id="cont1">
 				<h3 class="modal__title">Обычное шоу</h3>
-				<span class="modal__text">В программу включен ряд экспериментов, в которых дети принимают активное участие. Эксперименты подбираются в соответствии с интересами детей. 
+				<span class="modal__text">В программу включен ряд экспериментов, в которых дети принимают активное участие. Эксперименты подбираются в соответствии с интересами детей.
 				</span>
 				<div class="modal__info">
 					<div class="info">
@@ -125,7 +127,7 @@
 					<div class="info">
 						<img src="images/money.svg" alt="money" class="price">
 						<span class="price__text">5 000 руб</span>
-					</div>	
+					</div>
 				</div>
 			</div>
 
@@ -141,7 +143,7 @@
 						<div class="info">
 							<img src="images/money.svg" alt="money" class="price">
 							<span class="price__text">8 000 руб</span>
-						</div>	
+						</div>
 					</div>
 			</div>
 
@@ -158,7 +160,7 @@
 					<div class="info">
 						<img src="images/money.svg" alt="money" class="price">
 						<span class="price__text">10 000 руб</span>
-					</div>	
+					</div>
 				</div>
 			</div>
 
@@ -174,10 +176,10 @@
 					<div class="info">
 						<img src="images/money.svg" alt="money" class="price">
 						<span class="price__text">4 000 руб</span>
-					</div>	
+					</div>
 				</div>
 			</div>
-			
+
 			<div class="modal__content" id="cont5">
 					<h3 class="modal__title">Шоу с мастер-классом</h3>
 					<span class="modal__text">В программу включено шоу с экспериментами, а также мастер-класс, по итогу
@@ -191,10 +193,10 @@
 						<div class="info">
 							<img src="images/money.svg" alt="money" class="price">
 							<span class="price__text">7 000 руб</span>
-						</div>	
+						</div>
 					</div>
 			</div>
-			
+
 			<div class="modal__content" id="cont6">
 					<h3 class="modal__title">Череда мастер-классов</h3>
 					<span class="modal__text">В программу включены три самых популярных мастер-класса. По окончанию программы все дети изготовят собственными
@@ -208,13 +210,13 @@
 						<div class="info">
 							<img src="images/money.svg" alt="money" class="price">
 							<span class="price__text">8 000 руб</span>
-						</div>	
+						</div>
 					</div>
 			</div>
 
 			<div class="modal__content" id="cont7">
 					<h3 class="modal__title">Тематическое шоу</h3>
-					<span class="modal__text">Шоу со сценарием, которое организует команда Профессора Звездунова в стиле любимых 
+					<span class="modal__text">Шоу со сценарием, которое организует команда Профессора Звездунова в стиле любимых
 						фильма/мультфильма/игры Вашего ребёнка.
 					</span>
 					<div class="modal__info">
@@ -225,10 +227,10 @@
 						<div class="info">
 							<img src="images/money.svg" alt="money" class="price">
 							<span class="price__text">8 000 руб</span>
-						</div>	
+						</div>
 					</div>
 			</div>
-			
+
 			<div class="modal__content" id="cont8">
 					<h3 class="modal__title">Шоу под ключ</h3>
 					<span class="modal__text">Команда Профессора Звездунова сделает любое Ваше мероприятие от А до Я (площадка для мероприятия, оформление,
@@ -242,23 +244,23 @@
 						<div class="info">
 							<img src="images/money.svg" alt="money" class="price">
 							<span class="price__text">договорная</span>
-						</div>	
+						</div>
 					</div>
 			</div>
 			<!-- СОДЕРЖИМОЕ МОДАЛЬНОГО ОКНА (Шоу) -->
-			
+
 			<!-- МОДАЛЬНОЕ ОКНО (Шоу) -->
 			<div id="modal">
 				<div class="modal__container">
 
-						<i class="fas fa-times closeModal"></i>	
+						<i class="fas fa-times closeModal"></i>
 
 					<div id="innerModal"></div>
 
 					<div class="modal__btn">
 							<a href="#" class="call-back__btn">
 									<span class="call-back__link">Заказать</span>
-							</a>	
+							</a>
 					</div>
 
 				</div>
@@ -278,7 +280,7 @@
 							<span class="command__text">Профессор Туманкин крайне востребован и занят, а потому решил,
 								что его доброе лицо и умный взгляд сами скажут за себя и объяснят, насколько он крут.
 							</span>
-							</div>	
+							</div>
 							<img src="images/person_1.png" alt="person" class="command__img person__img-1">
 						</div>
 						<div class="command__person">
@@ -301,11 +303,11 @@
 					<div class="photo-galleries__frame"></div>
 					<div class="swiper-container">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="images/photo-gallery.png" alt="show" class="slider__img"></div>
-								<div class="swiper-slide"><img src="images/photo-gallery.png" alt="show" class="slider__img"></div>
-								<div class="swiper-slide"><img src="images/photo-gallery.png" alt="show" class="slider__img"></div>
-								<div class="swiper-slide"><img src="images/photo-gallery.png" alt="show" class="slider__img"></div>
-								<div class="swiper-slide"><img src="images/photo-gallery.png" alt="show" class="slider__img"></div>
+								<div class="swiper-slide"><img src="images/photo1.png" alt="show" class="slider__img"></div>
+								<div class="swiper-slide"><img src="images/photo2.png" alt="show" class="slider__img"></div>
+								<div class="swiper-slide"><img src="images/photo3.png" alt="show" class="slider__img"></div>
+								<div class="swiper-slide"><img src="images/photo4.png" alt="show" class="slider__img"></div>
+								<div class="swiper-slide"><img src="images/photo5.png" alt="show" class="slider__img"></div>
 							</div>
 							<!-- Add Arrows -->
 							<div class="swiper-button-next"></div>
@@ -322,39 +324,41 @@
 							<div class="swiper-slide">
 								<div class="feedback__post">
 									<div class="feedback__peson">
-										<img src="images/avatar.png" alt="photo" class="feedback__avatar">
-										<span class="feedback__name">Петр Иванов</span>
+										<img src="images/abakumova.png" alt="photo" class="feedback__avatar">
+										<span class="feedback__name">Ольга А.</span>
 									</div>
-									<span class="feedback__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-										 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-										 Lorem Ipsum is simply dummy text of the printing and typesetting
-											industry has been the Lorem Ipsum.
+									<span class="feedback__text">В субботу к нам приходил ваш профессор,
+                                        сегодня уже понедельник, а разговоры только о научном шоу, о волшебстве!
+                                        Остались очень довольны.
+                                        День рождения сына прошёл на "ура"! Огромное спасибо за праздник!
 									</span>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="feedback__post">
 									<div class="feedback__peson">
-										<img src="images/avatar.png" alt="photo" class="feedback__avatar">
-										<span class="feedback__name">Петр Иванов</span>
+										<img src="images/ivanova.png" alt="photo" class="feedback__avatar">
+										<span class="feedback__name">Ольга И.</span>
 									</div>
-									<span class="feedback__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-										 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-										 Lorem Ipsum is simply dummy text of the printing and typesetting
-											industry has been the Lorem Ipsum.
+									<span class="feedback__text">Огромное спасибо! Было очень весело!
+                                        Никогда бы не узнали, что ребёнок, оказывается, хочет стать воспитателем
+                                        и не пойдёт в школу! Будем принимать "меры"!
+                                        А после эксперимента с огнём прячем спички :D СПАСИБО! Так важно нести людям праздник! Это огромный труд – добавлять волшебство в суровые будни,
+                                        в эти моменты каждая эмоция радости стоит гораздо больше любых благ!
 									</span>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="feedback__post">
 									<div class="feedback__peson">
-										<img src="images/avatar.png" alt="photo" class="feedback__avatar">
-										<span class="feedback__name">Петр Иванов</span>
+										<img src="images/kazakova.png" alt="photo" class="feedback__avatar">
+										<span class="feedback__name">Екатерина К.</span>
 									</div>
-									<span class="feedback__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-										 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-										 Lorem Ipsum is simply dummy text of the printing and typesetting
-											industry has been the Lorem Ipsum.
+									<span class="feedback__text">Вы большие молодцы!
+                                        Ваше научное шоу поразило всех моих гостей! Эмоции прут, так клёво!
+                                        Все меня спрашивают, где я вас взяла, а мне от этого очень приятно!
+                                        Всё сработало, "зашло" на нашем дне рождения ваше представление!
+                                        Желаю вам успехов и процветания!
 									</span>
 								</div>
 							</div>
@@ -371,8 +375,9 @@
 					<h2 class="confidence__title">Нам доверяют</h2>
 					<div class="confidence__container">
 						<img src="images/Планета.png" alt="Планета" class="confidence__img">
-						<img src="images/Июнь.png" alt="Июнь" class="confidence__img">
-						<img src="images/Дворец.png" alt="Дворец пионеров" class="confidence__img">
+                        <img src="images/ЦБС.png" alt="ЦБС" class="confidence__img" style="!important; width: 260px; height: 240px;">
+                        <img src="images/Дворец.png" alt="Дворец пионеров" class="confidence__img">
+                        <img src="images/Afontovo.png" alt="Afontovo" class="confidence__img" style="!important; width: 260px; height: 240px;">
 					</div>
 			</div>
 	</section>
@@ -383,6 +388,7 @@
 			<h3 class="modal-call__title">Наш менеджер свяжется с вами в ближайшее время</h3>
 			<span class="modal-call__text">Просто заполните форму обратной связи</span>
 			<form class="modal-call__form" name="data" id="callback-form">
+                {{ csrf_field() }}
 				<div class="modal-call__data">
 					<input type="text" class="modal-call__input" placeholder="Ваше имя" name="name">
 					<input type="tel" class="modal-call__input" placeholder="Номер телефона" name="phone">
@@ -422,7 +428,7 @@
 							<span class="call-back__link">Заказать</span>
 						</a>
 				</div>
-				
+
 			</div>
 		</div>
 	</footer>
