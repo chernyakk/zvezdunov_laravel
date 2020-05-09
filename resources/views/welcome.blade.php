@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
 	<title>Научное шоу Профессора Звездунова в Красноярске</title>
 
@@ -14,7 +15,9 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-	<script src="https://kit.fontawesome.com/e2177a3301.js"></script>
+    <script src="https://kit.fontawesome.com/e2177a3301.js"></script>
+    <script src="{{ url('js/jQuery.js') }}"></script>
+    <script src="{{ url('js/main.js') }}"></script>
 	<link rel="stylesheet" href="css/style.css">
     </head>
     <header class="header">
@@ -61,9 +64,6 @@
 			<h1 class="video-description__title">Наука — это здорово!</h1>
 			<div class="video-description__frame"></div>
 			<div class="block-video">
-{{--				<iframe style="!important; border-radius: 25px" width="600" height="400"--}}
-{{--                src="https://www.youtube.com/embed/fFis3ef4gsA" frameborder="0" allow="accelerometer;--}}
-{{--                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
                 <iframe style="!important; border-radius: 25px" width="600" height="400" src="//vk.com/video_ext.php?oid=-79789144&id=456239022&hash=6a6ab8fee3e67ef8&hd=2"
                        frameborder="0" allowfullscreen></iframe>
 			</div>
@@ -276,7 +276,7 @@
 					<div class="command__info">
 						<div class="command__person">
 							<div class="command__person-info person-info-1">
-							<span class="command__name">Профессор ТУманкин</span>
+							<span class="command__name">Профессор Туманкин</span>
 							<span class="command__text">Профессор Туманкин крайне востребован и занят, а потому решил,
 								что его доброе лицо и умный взгляд сами скажут за себя и объяснят, насколько он крут.
 							</span>
@@ -384,19 +384,25 @@
 
 	<!-- МОДАЛЬНОЕ ОКНО (ЗАКАЗАТЬ)  -->
 
-	<div class="modal-call__content" id="cont">
+
+    <div class="modal-call__content" id="cont">
 			<h3 class="modal-call__title">Наш менеджер свяжется с вами в ближайшее время</h3>
-			<span class="modal-call__text">Просто заполните форму обратной связи</span>
-			<form class="modal-call__form" name="data" id="callback-form">
+			<span class="modal-call__text" id="please">Просто заполните форму обратной связи</span>
+			<form class="modal-call__form" name="data" id="callback-form" method='POST'>
                 {{ csrf_field() }}
-				<div class="modal-call__data">
-					<input type="text" class="modal-call__input" placeholder="Ваше имя" name="name">
-					<input type="tel" class="modal-call__input" placeholder="Номер телефона" name="phone">
+                @csrf
+                <div class="modal-call__data">
+					<input type="text" class="modal-call__input" placeholder="Ваше имя" name="name" id="modalname">
+					<input type="tel" class="modal-call__input" placeholder="Номер телефона" name="phone" id="modalphone">
 				</div>
-				<input type="submit" class="modal-call__btn">
+            <input type="submit" class="modal-call__btn" value="Заказать" onclick="sender()">
 			</form>
 		</div>
 
+        <div class="modal-call__content" id="success">
+			<h3 class="modal-call__title">Спасибо за Вашу заявку!</h3>
+			<h4 class="modal-call__title">Наш менеджер скоро Вам перезвонит</span>
+		</div>
 
 		<div id="modalCall">
 				<div class="modal-call__container">

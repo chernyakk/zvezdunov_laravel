@@ -6,7 +6,7 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 $(document).ready(function() {
-   
+
   let modal = {
     self: $("#modal"),
 
@@ -78,11 +78,11 @@ $(document).ready(function() {
         })
         .mouseout(function(){
           $(".person__img-1").css("transform","scale(1)");
-          $(".person__img-1").css("padding-bottom","0");  
-          $(".person__img-2").css("margin-top","0");         
+          $(".person__img-1").css("padding-bottom","0");
+          $(".person__img-2").css("margin-top","0");
 					$(".person-info-1").css("opacity", "0");
 				});
-				
+
 	$(".person__img-2")
         .mouseover(function() {
           $(".person__img-2").css("transform","scale(1.05)");
@@ -90,10 +90,10 @@ $(document).ready(function() {
           $(".person__img-1").css("margin-top","14px");
 					$(".person-info-2").css("opacity", "1");
         })
-        .mouseout(function(){   
+        .mouseout(function(){
           $(".person__img-2").css("transform","scale(1)");
-          $(".person__img-2").css("padding-bottom","0"); 
-          $(".person__img-1").css("margin-top","0");       
+          $(".person__img-2").css("padding-bottom","0");
+          $(".person__img-1").css("margin-top","0");
 					$(".person-info-2").css("opacity", "0");
 				});
 
@@ -103,13 +103,13 @@ $(document).ready(function() {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
-				
+
 	$(window).on("scroll", function () {
     let scrolled = $(this).scrollTop();
     if( scrolled > 0 ) {
         $('body').addClass('scrolled');
-    }   
-    if( scrolled <= 0 ) {     
+    }
+    if( scrolled <= 0 ) {
         $('body').removeClass('scrolled');
     }
 });

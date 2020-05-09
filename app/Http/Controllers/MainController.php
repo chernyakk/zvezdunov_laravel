@@ -23,23 +23,13 @@ class MainController extends Controller
 
     public function sendMail(Request $request) {
         if($request->isMethod('post')) {
-            if($request->has('phone')) {
-                // set timezone
-                date_default_timezone_set('Asia/Krasnoyarsk');
-                // get phone
-                $phone = $request->input('phone');
-                // data for email
-                $data = [
-                    'phone' => $phone,
-                    'time' => date(DATE_RFC822)
-                ];
-                // send info email
-                Mail::send('mail.phone', ['data' => $data], function($message) use ($data) {
-                    $mail_admin = env('MAIL_ADMIN');
-                    $message->from( 'ticket@service-helper.ru', 'Новый тикет - ремонт компьютеров');
-                    $message->to($mail_admin, 'Оператору компьютерной помощи')
-                        ->subject('Тема: Новая заявка на ремонт компьютерной техники');
-                });
-            }
-        }
-    }}
+            Mail::send('mail', [], function($message)
+            {
+                $message->to('proffzvezdunoff@yandex.ru'
+                     , 'Менеджеру') ->subject('Тема: Новая заявка');
+                     $message->from('proffzvezdunoff@yandex.ru', 'Заявка с сайта');
+            });
+        };
+    }
+}
+

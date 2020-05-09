@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a5fd0be-cbc6-4703-9e35-6724d147fef5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/zvezdunov_laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zvezdunov_laravel.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work/bitrix24/app1" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -154,7 +153,8 @@
       <workItem from="1575902482035" duration="743000" />
       <workItem from="1577297029145" duration="606000" />
       <workItem from="1580462250556" duration="15000" />
-      <workItem from="1580656156117" duration="281000" />
+      <workItem from="1580656156117" duration="1070000" />
+      <workItem from="1580721840741" duration="15000" />
     </task>
     <servers />
   </component>
@@ -175,10 +175,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="780" y="311" key="FileChooserDialogImpl" timestamp="1580462262711">
+    <state x="780" y="311" width="424" height="482" key="FileChooserDialogImpl" timestamp="1580721853932">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="780" y="311" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1580462262711" />
+    <state x="780" y="311" width="424" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1580721853932" />
     <state x="821" y="448" key="Github.ShareDialog" timestamp="1575902554147">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>

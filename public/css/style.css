@@ -577,7 +577,8 @@
 	box-sizing:border-box;
 	position: relative;
 	z-index: 99999;
-	display: flex;
+    display: flex;
+    text-align: center;
 	justify-content: center;
 }
 
@@ -607,9 +608,22 @@
 }
 
 .modal-call__text{
+    text-align: center;
 	font-family: 'Merel',sans-serif;
 	font-weight: 400;
-	color:#ffffff;
+    color:#ffffff;
+    text-align: center;
+    display: inline-block;
+	padding-top: 15px;
+}
+
+.modal-call__error-text{
+	font-family: 'Merel',sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 24px;
+    color:rgb(25, 86, 216);
+    text-align: center;
 	padding-top: 15px;
 }
 
@@ -628,7 +642,18 @@
 	width: 210px;
 	height: 35px;
 	background: #FFFFFF;
-	border:0;
+	border: 0;
+	border-radius: 17.5px;
+	outline: none;
+	padding-left:19px;
+	padding-right: 19px;
+}
+
+.modal-call__input-non-verified{
+	width: 210px;
+	height: 35px;
+	background: #FFFFFF;
+	border:3px solid red;
 	border-radius: 17.5px;
 	outline: none;
 	padding-left:19px;
